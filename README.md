@@ -39,3 +39,5 @@ custom-gpt-project/
 ## Status
 
 Topic 1 — Use Case Definition: In Progress
+
+https://www.loom.com/share/bf9448699a474098a958a48e53215b57
