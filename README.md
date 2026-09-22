@@ -94,3 +94,115 @@ custom-gpt-project/
 Status
 Topic 1 — Use Case Definition: Completed
 Topic 2 — Designing Effective Instructions: Completed
+
+
+# Custom GPT Project — HR Buddy
+
+## Project Overview
+
+This project demonstrates the design and testing of **HR Buddy**, an HR policy assistant for Artscape employees.
+
+The project covers the Custom GPT Hands-on topics completed as part of the assessment.
+
+## Project Structure
+
+```text
+custom-gpt-project/
+├── use_case_document.md
+├── instruction_block.md
+├── test_results_summary.md
+├── persona_definition.md
+├── sample_conversations.md
+└── README.md
+```
+
+## Topic 1 — Use Case Definition
+
+Defined the HR Buddy use case, including:
+
+* Target users
+* Business problem
+* GPT purpose
+* Expected outcomes
+
+## Topic 2 — GPT Instructions
+
+Created the instruction block defining:
+
+* Role and scope
+* Artscape HR context
+* Communication requirements
+* Privacy and safety rules
+* Response behavior
+* Restrictions
+
+## Topic 3 — Persona & Behavior
+
+Defined and tested the HR Buddy persona.
+
+### Persona
+
+* **Name:** HR Buddy
+* **Expertise:** General Artscape HR policy knowledge
+* **Communication Style:** Warm, clear, concise, and plain-language
+* **Attitude:** Helpful, supportive, patient, calm, and respectful
+
+### Allowed Behaviors
+
+* Explain HR policies in simple language.
+* Provide step-by-step process guidance.
+* Acknowledge employee frustration empathetically.
+* Ask clarifying questions when requests are vague.
+* Direct employees to HR, Finance, or IT when appropriate.
+
+### Restricted Behaviors
+
+* Do not provide definitive legal, tax, or immigration advice.
+* Do not guess personal leave balances, salary, or reimbursement amounts.
+* Do not invent HR policies or unsupported information.
+* Do not disclose another employee's confidential HR information.
+* Do not claim access to systems or records that are unavailable.
+* Maintain a calm and respectful tone.
+
+## Topic 3 Testing
+
+HR Buddy was tested using different types of queries:
+
+1. **Emotional Query** — Tested empathy and supportive communication.
+2. **Technical Query** — Tested policy explanation and accuracy.
+3. **Vague Query** — Tested clarification instead of guessing.
+4. **Privacy Query** — Tested protection of personal information.
+5. **Rude/Urgent Query** — Tested consistent and respectful behavior.
+
+The actual test conversations and evaluation results are documented in:
+
+```text
+sample_conversations.md
+```
+
+## Testing Method
+
+The Topic 3 behavior testing was performed using an **HR Buddy simulation in ChatGPT** because the ChatGPT Free account used for this assessment did not provide access to Custom GPT creation.
+
+No real employee data was used during testing.
+
+## Deliverables
+
+* `persona_definition.md` — Persona definition and behavioral rules.
+* `instruction_block.md` — Combined Topic 2 instructions with Topic 3 persona rules.
+* `sample_conversations.md` — Persona testing conversations and evaluation.
+* `test_results_summary.md` — Topic 2 testing results.
+* `use_case_document.md` — Original HR Buddy use case.
+
+## Topic 3 Learning Outcome
+
+This assessment demonstrates the ability to:
+
+* Define a consistent GPT persona.
+* Establish allowed and restricted behaviors.
+* Integrate persona rules into GPT instructions.
+* Test persona consistency across different query types.
+* Identify and improve persona inconsistencies.
+* Document actual test conversations and results.
+
+https://www.loom.com/share/d8adf1d8252f4c479e06df8731040a50
