@@ -206,3 +206,21 @@ This assessment demonstrates the ability to:
 * Document actual test conversations and results.
 
 https://www.loom.com/share/d8adf1d8252f4c479e06df8731040a50
+
+
+## Topic 4 — Conversation Flow & User Experience
+
+Designed and documented first-time and returning-user
+conversation flows for HR Buddy.
+
+### Deliverables
+
+- flow_design.md
+- test_observations.md
+
+### Key Outcomes
+
+- Defined clarification rules for ambiguous requests.
+- Integrated conversation-flow logic into the instruction block.
+- Tested incomplete and clear user inputs.
+- Documented observed conversation behavior.
