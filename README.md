@@ -224,3 +224,127 @@ conversation flows for HR Buddy.
 - Integrated conversation-flow logic into the instruction block.
 - Tested incomplete and clear user inputs.
 - Documented observed conversation behavior.
+
+## Topic 6 — Tool Usage & Capabilities
+
+### Objective
+
+In Topic 6, HR Buddy was enhanced with **Web Search** capability to distinguish between questions that can be answered from the approved HR knowledge base and questions that require current or recent external information.
+
+The objective was to ensure that HR Buddy:
+
+* Uses Web Search only when current, recent, live, or externally verifiable information is required.
+* Uses `hr_policy.md` as the primary source for standard Artscape HR policy questions.
+* Avoids unnecessary Web Search for questions already answered by the approved knowledge base.
+* Does not use Web Search to fill gaps in company policy.
+* Does not guess when required information is unavailable.
+* Provides a safe fallback by directing employees to HR when a policy question cannot be verified.
+* Clearly distinguishes information obtained from the knowledge base from information obtained through Web Search.
+
+### Capability Audit
+
+| Capability       | Enabled | Purpose                                                      |
+| ---------------- | ------- | ------------------------------------------------------------ |
+| Web Search       | Yes     | Verify current, recent, or externally verifiable information |
+| Code Interpreter | No      | Not required for the HR Buddy use case                       |
+| Image Generation | No      | Not relevant to HR policy assistance                         |
+| Custom Actions   | No      | No external system integration implemented                   |
+
+### Tool Decision Logic
+
+HR Buddy follows this decision logic:
+
+```text
+Static company policy question
+        ↓
+   hr_policy.md
+        ↓
+      Answer
+
+Current / recent information
+        ↓
+    Web Search
+        ↓
+ Verify and cite source
+
+Unknown company policy
+        ↓
+ Do not search the web
+        ↓
+    Do not guess
+        ↓
+   Direct user to HR
+```
+
+### Web Search Governance
+
+Web Search is used only when the user's request requires current or recently changed information.
+
+Examples include:
+
+* "Has this holiday date changed?"
+* "Is this information still accurate?"
+* "Are there any recent updates?"
+* "What is the current information?"
+
+Web Search is not used for:
+
+* Standard leave questions already covered in `hr_policy.md`.
+* Standard reimbursement questions already covered in the approved knowledge base.
+* Filling gaps in Artscape company policy.
+* Generic questions outside the approved HR policy scope.
+* Simple questions that can be answered from the existing knowledge base.
+
+### Fallback Behavior
+
+If Web Search fails, returns no useful result, or does not provide sufficiently reliable information, HR Buddy must:
+
+1. Avoid guessing.
+2. Inform the user that the current information could not be verified.
+3. Avoid presenting unverified information as fact.
+4. Direct the user to `hr@artscape.com` for confirmation.
+
+### Topic 6 Testing
+
+Three scenarios were used to validate tool behavior:
+
+| Test   | Scenario                                                                       | Expected Behavior                                                                       |
+| ------ | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| Test 1 | "Has the Diwali holiday date for this year changed from what's in the policy?" | Use Web Search and verify current information                                           |
+| Test 2 | "How many sick leaves do I get per year?"                                      | Answer from `hr_policy.md` without Web Search                                           |
+| Test 3 | "Can I work from home on a public holiday?"                                    | Do not search or guess; direct the user to HR if the policy does not provide the answer |
+
+The detailed test results are documented in [`test_examples.md`](test_examples.md).
+
+### Topic 6 Deliverable
+
+The following file was added for Topic 6:
+
+```text
+test_examples.md
+```
+
+This file documents the tool-required, tool-not-required, and knowledge-gap test scenarios and their actual results.
+
+### Topic 6 Outcome
+
+Topic 6 extends HR Buddy's capabilities by adding controlled Web Search usage while maintaining the approved knowledge base as the source of truth for Artscape HR policies.
+
+The completed HR Buddy workflow is:
+
+```text
+Topic 1: Use Case
+        ↓
+Topic 2: Instructions
+        ↓
+Topic 3: Persona & Behavior
+        ↓
+Topic 4: Conversation Flow
+        ↓
+Topic 5: Knowledge / RAG
+        ↓
+Topic 6: Tool Usage & Capabilities
+        ↓
+HR Buddy
+```
+
