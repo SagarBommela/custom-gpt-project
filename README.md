@@ -348,3 +348,143 @@ Topic 6: Tool Usage & Capabilities
 HR Buddy
 ```
 
+## Topic 7 — Constraints, Safety & Guardrails
+
+### Objective
+
+Topic 7 focused on designing and validating safety guardrails for HR Buddy. The goal was to ensure that HR Buddy respects defined scope boundaries, protects sensitive employee information, avoids unsupported legal guidance, and refuses prohibited requests without leaking protected information.
+
+### Completed Work
+
+The following Topic 7 activities were completed:
+
+* Defined out-of-scope topics for HR Buddy.
+* Defined sensitive and confidential information that HR Buddy must never disclose.
+* Established the approved knowledge-source boundary.
+* Created consistent refusal responses for prohibited and borderline requests.
+* Added information-leakage prevention rules.
+* Added guardrail decision logic to the consolidated Custom GPT instructions.
+* Updated the HR Buddy instruction block with the finalized guardrails.
+* Verified the approved HR knowledge source remains enabled.
+* Verified Web Search cannot be used to bypass guardrails.
+* Started a fresh test session for guardrail validation.
+* Tested prohibited, sensitive, borderline, and legitimate HR requests.
+* Verified that prohibited requests are refused before protected information is disclosed.
+* Documented guardrail test results and validation findings.
+
+### Topic 7 Deliverables
+
+```text
+guardrail_rules.md
+test_guardrails.md
+instruction_block.md
+```
+
+### Guardrail Categories
+
+#### Out-of-Scope Requests
+
+HR Buddy does not provide assistance with:
+
+* Salary and compensation
+* Performance reviews
+* Hiring and termination
+* Legal advice
+* Immigration and visa matters
+* IT support
+* Unrelated personal advice
+* Other topics outside leave, public holidays, and reimbursements
+
+#### Sensitive Information
+
+HR Buddy must not disclose:
+
+* Another employee's salary
+* Another employee's leave information
+* Another employee's reimbursement information
+* Personal employee HR information
+* Internal credentials
+* Database access information
+* Confidential company financial information
+
+#### Knowledge Boundary
+
+The approved `hr_policy.md` knowledge source is the source of truth for Artscape HR policy questions.
+
+HR Buddy must not:
+
+* Guess missing information
+* Invent policy details
+* Infer company policy from general HR practices
+* Use Web Search to replace the approved policy source
+* Provide unsupported information as Artscape policy
+
+### Refusal Behavior
+
+HR Buddy checks scope and sensitivity before generating an answer.
+
+For prohibited or sensitive requests, HR Buddy:
+
+1. Refuses immediately.
+2. Does not provide partial information.
+3. Does not estimate or infer protected information.
+4. Does not use Web Search to bypass the restriction.
+5. Maintains a warm and professional tone.
+6. Directs the employee to HR at `hr@artscape.com` when appropriate.
+
+### Topic 7 Testing
+
+The following scenarios were tested:
+
+1. Colleague salary request.
+2. HR database credential request.
+3. Legal-rights question relating to denied leave.
+4. Teammate reimbursement request.
+5. Borderline leave-approval question.
+6. Legitimate sick-leave policy question.
+
+Detailed results are documented in:
+
+```text
+test_guardrails.md
+```
+
+### Topic 7 Acceptance Criteria
+
+* [x] Out-of-scope guardrails defined
+* [x] Sensitive information guardrails defined
+* [x] At least 3 refusal responses drafted
+* [x] Guardrails integrated into Custom GPT instructions
+* [x] Prohibited questions tested
+* [x] Ambiguous/borderline questions tested
+* [x] Information leakage checked
+* [x] Guardrail rules saved in `guardrail_rules.md`
+* [x] Test results documented in `test_guardrails.md`
+
+### Project Progression
+
+```text
+Topic 1 — Use Case
+        ↓
+Topic 2 — Instructions
+        ↓
+Topic 3 — Persona & Behavior
+        ↓
+Topic 4 — Conversation Flow
+        ↓
+Topic 5 — Knowledge / RAG
+        ↓
+Topic 6 — Tool Usage
+        ↓
+Topic 7 — Constraints, Safety & Guardrails
+        ↓
+HR Buddy
+```
+
+Topic 7 extends HR Buddy with explicit safety boundaries while preserving its original purpose as an internal HR policy assistant.
+
+LOOM Vedioo
+
+https://www.loom.com/share/176caa9db2b3449fa04a372a7cfbf978
+
+
