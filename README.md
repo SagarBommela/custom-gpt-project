@@ -822,3 +822,90 @@ LOOM Video:
 
 https://www.loom.com/share/54054f7c26ed46f1ab619725c67f433b
 
+
+# HR Buddy — Custom GPT Hands-On Capstone
+
+## Project Overview
+
+HR Buddy is an HR policy assistant designed for Artscape employees.
+
+The project demonstrates the complete Custom GPT development lifecycle
+covered across Topics 1–10:
+
+- Use-case definition
+- Instruction design
+- Persona design
+- Conversation flow
+- Knowledge grounding
+- Tool usage
+- Guardrails
+- Prompt testing
+- Iteration
+- Evaluation
+- Capstone integration
+- Regression testing
+- Presentation
+
+The assistant is designed to answer approved HR policy questions while
+avoiding unsupported claims, confidential information, credentials,
+legal advice, and confidential disciplinary or investigation information.
+
+---
+
+# Project Objective
+
+The objective of Topic 10 is to consolidate the work completed in
+Topics 1–9 into one final HR Buddy capstone implementation.
+
+Topic 10 adds:
+
+- Work From Home policy
+- Probation-period leave rules
+- Disciplinary/investigation guardrails
+- Persona enhancements
+- Test #13 knowledge-gap scenario
+- Consolidated system instructions
+- End-to-end capstone testing
+- Multi-domain regression testing
+- Final demonstration materials
+
+---
+
+# Repository Structure
+
+```text
+custom-gpt-project/
+│
+├── README.md
+│
+├── Documentation/
+│   ├── use_case_document.md
+│   ├── instruction_block.md
+│   ├── instructions_v1.0.md
+│   ├── instructions_v1.1.md
+│   ├── persona_definition.md
+│   ├── flow_design.md
+│   ├── guardrail_rules.md
+│   ├── test_checklist.md
+│   ├── evaluation_sheet.md
+│   ├── before_after_comparison.md
+│   ├── optimization_summary.md
+│   ├── hr_buddy_full_system_prompt.md
+│   └── capstone_test_log.md
+│
+├── Knowledge/
+│   └── hr_policy.md
+│
+├── Testing/
+│   ├── test_results_summary.md
+│   ├── test_observations.md
+│   ├── test_qa_results.md
+│   ├── test_examples.md
+│   └── sample_conversations.md
+│
+└── Presentation/
+    └── demo_script.md
+
+Loom Video:
+
+https://www.loom.com/share/21f180dd1d594bb193e2a0fafe85bf74

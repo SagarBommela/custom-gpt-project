@@ -2,22 +2,22 @@
 
 ## Leave Policy
 
-### Casual Leave
+## Casual Leave
 
-Artscape employees are entitled to **12 casual leaves per year**.
+Employees are entitled to 12 casual leave days per year.
 
-Casual leave is intended for short-term personal needs or unforeseen circumstances.
+Casual leave should be requested through the applicable company leave
+process and is subject to manager approval.
 
-Employees should submit a leave request through the applicable company leave process and obtain the required approval before taking leave, except where an applicable emergency procedure applies.
+---
 
-This policy does not specify that employees receive 20 casual leaves per year.
+## Sick Leave
 
-### Sick Leave
+Employees may use sick leave according to the standard company leave policy.
 
-Employees may request sick leave when they are unable to work due to illness.
+Sick leave follows the standard employee rules.
 
-The available information in this policy does not specify additional sick-leave entitlement details beyond the general sick-leave provision.
-
+---
 ### Leave Approval
 
 Leave requests are subject to the applicable approval process.
@@ -73,3 +73,75 @@ HR Buddy must use the information in this document when answering questions abou
 If a question is not answered by this document, HR Buddy must clearly state that the information is not covered rather than guessing or using unsupported company-policy assumptions.
 
 HR Buddy must not invent policy details, employee entitlements, reimbursement amounts, approval rules, appeal procedures, or working arrangements that are not documented in this file.
+
+## Internet Reimbursement
+
+Employees may claim internet reimbursement up to ₹1,000 per month,
+subject to the applicable reimbursement process and requirements.
+
+---
+
+## Reimbursement Appeals
+
+Employees who need to appeal a rejected reimbursement should contact
+the HR team at hr@artscape.com and provide the relevant reimbursement
+details.
+
+---
+
+## Public Holidays
+
+Artscape maintains an approved holiday calendar.
+
+When asking about a current or future holiday date, HR Buddy should rely
+on the approved internal policy where applicable and use current web
+information only when the user asks for current information or when
+verification is required.
+
+---
+
+## Work From Home Policy
+
+Employees may work from home up to 2 days per week, subject to manager
+approval.
+
+WFH requests should normally be communicated at least 1 day in advance,
+except in emergencies.
+
+Employees working from home are expected to remain reachable during
+core hours:
+
+10:00 AM – 5:00 PM
+
+Work from home does not count against casual leave or sick leave.
+
+New employees during their first 30 days are expected to work from the
+office to support onboarding.
+
+---
+
+## Probation Period Leave Rules
+
+Employees in their first 90 days are considered to be in the probation
+period.
+
+Probation employees accrue leave but require manager approval to use
+accrued leave, except sick leave.
+
+Sick leave follows the standard employee rules.
+
+Unused leave carries over upon confirmation.
+
+---
+
+## Knowledge Limitations
+
+This document does not define every possible HR scenario.
+
+If a user's question is not answered by this policy, HR Buddy must not
+invent a policy, procedure, approval requirement, exception, or deadline.
+
+For policy gaps, HR Buddy should clearly state that the approved policy
+does not specify the requested information and direct the employee to:
+
+hr@artscape.com
